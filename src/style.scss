@@ -1,3 +1,11 @@
+//variables
+$des-red: hsl(0, 36%, 70%);
+$sof-red: hsl(0, 93%, 68%);
+$dgr: hsl(0, 6%, 24%);
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
@@ -6,11 +14,98 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+#navbar{
+    position: absolute;
+    left: 7rem;
+    top: 3.5rem;
 }
 
 
 //Main Content
 #mainContainer{
     display: flex;
+    position: relative;
+    height: 100vh;
 
+    #content1{
+        padding: 0 7rem 0 7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        
+
+       #bigText{
+           text-transform: uppercase;
+           font-size: 3.7rem;
+           letter-spacing: 1.2rem;
+           font-weight: 600;
+           margin-top: -1.2rem;
+           color: $dgr;
+           
+       }
+
+       span{
+           font-weight: 300;
+           color: $des-red;
+       }
+
+       #text{
+           padding: 2rem 0;
+           font-size: 17px;
+           color: $des-red;
+            line-height: 1.8rem;
+       }
+
+       #inputContainer{
+            display: flex;
+            position: relative;
+            width: 100%;
+            
+
+            #inputEmail{
+                width: 22rem;
+                font-family: 'Josfin Sans', sans-serif;
+                border: 1px solid $sof-red;
+                padding: 1rem 2rem;
+                border-radius: 25px;
+
+                &:focus-visible{
+                    outline: 1.5px solid $sof-red;
+                }
+            }
+
+            
+
+            button{
+                position: absolute;
+                left: 22rem;
+                padding: 1rem 2rem;
+                border-radius: 25px;
+                border: none;
+                background-color: hsl(0, 70%, 84%);
+                cursor: pointer;
+                
+                &:hover{
+                    box-shadow: -2px 5px 10px 1px rgba(206, 151, 151, 0.808);
+                }
+
+                img{
+                    width: 70%;
+                }
+            }
+       }
+    }
+
+    #content2{
+        width: 100%;
+        background: linear-gradient(135deg, hsla(0, 80%, 86%, 0.11), hsla(0, 74%, 74%, 0.116)), url('/images/hero-desktop.jpg') no-repeat;
+        background-size: cover;
+    }
+    
 }
