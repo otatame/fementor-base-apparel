@@ -44,10 +44,9 @@ body {
 
 #mainContainer #content1 #bigText {
   text-transform: uppercase;
-  font-size: 3.7rem;
+  font-size: 3.5rem;
   letter-spacing: 1.2rem;
   font-weight: 600;
-  margin-top: -1.2rem;
   color: #413a3a;
 }
 
@@ -58,7 +57,7 @@ body {
 
 #mainContainer #content1 #text {
   padding: 2rem 0;
-  font-size: 17px;
+  font-size: 16px;
   color: #ce9797;
   line-height: 1.8rem;
 }
@@ -106,5 +105,50 @@ body {
   width: 100%;
   background: linear-gradient(135deg, rgba(248, 191, 191, 0.11), rgba(238, 140, 140, 0.116)), url("/images/hero-desktop.jpg") no-repeat;
   background-size: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  #mainContainer #content1 #bigText {
+    font-size: 3rem;
+  }
+  #mainContainer #content1 #text {
+    font-size: 15px;
+  }
+  #mainContainer #content1 #inputContainer #inputEmail {
+    width: 18rem;
+  }
+  #mainContainer #content1 #inputContainer button {
+    left: 18rem;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  #navbar {
+    left: 5rem;
+  }
+  #mainContainer #content1 {
+    padding: 0 5rem;
+  }
+  #mainContainer #content1 #bigText {
+    font-size: 2.7rem;
+  }
+  #mainContainer #content1 #text {
+    font-size: 13px;
+  }
+  #mainContainer #content1 #inputContainer #inputEmail {
+    width: 15rem;
+  }
+  #mainContainer #content1 #inputContainer button {
+    left: 15rem;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  #mainContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 /*# sourceMappingURL=style.css.map */

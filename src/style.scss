@@ -5,6 +5,7 @@ $dgr: hsl(0, 6%, 24%);
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 
+@import "./media";
 
 *{
     padding: 0;
@@ -42,10 +43,9 @@ body{
 
        #bigText{
            text-transform: uppercase;
-           font-size: 3.7rem;
+           font-size: 3.5rem;
            letter-spacing: 1.2rem;
            font-weight: 600;
-           margin-top: -1.2rem;
            color: $dgr;
            
        }
@@ -57,7 +57,7 @@ body{
 
        #text{
            padding: 2rem 0;
-           font-size: 17px;
+           font-size: 16px;
            color: $des-red;
             line-height: 1.8rem;
        }
@@ -108,4 +108,72 @@ body{
         background-size: cover;
     }
     
+}
+
+@media screen and (max-width: 1200px){
+
+    #mainContainer{
+
+        #content1{
+
+            #bigText{
+                font-size: 3rem;
+            }
+
+            #text{
+                font-size: 15px;
+            }
+
+            #inputContainer{
+
+                #inputEmail{
+                    width: 18rem;
+                }
+
+                button{
+                    left: 18rem;
+                }
+            }
+        }
+
+        
+    }
+}
+
+@media screen and (max-width: 970px){
+    #navbar{
+        left: 5rem;
+    }
+    
+    #mainContainer{
+
+        #content1{
+            padding: 0 5rem;
+
+            #bigText{
+                font-size: 2.7rem;
+            }
+
+            #text{
+                font-size: 13px;
+            }
+
+            #inputContainer{
+
+                #inputEmail{
+                    width: 15rem;
+                }
+
+                button{
+                    left: 15rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 870px){
+    #mainContainer{
+        flex-direction: column-reverse;
+    }
 }
