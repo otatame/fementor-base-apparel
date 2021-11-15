@@ -173,7 +173,37 @@ body{
 }
 
 @media screen and (max-width: 870px){
+    #navbar{
+        position: initial;
+        padding: 2rem;
+    }
+
     #mainContainer{
         flex-direction: column-reverse;
+        align-items: center;
+        height: 80vh;
+
+        #content1{
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+            
+            #bigText{
+                font-size: 36px;
+                text-align: center;
+                
+            }
+
+            #text{
+                text-align: center;
+                padding-top: 10px;
+            }
+        }
+
+        #content2{
+            height: 100%;
+
+        }
     }
 }
